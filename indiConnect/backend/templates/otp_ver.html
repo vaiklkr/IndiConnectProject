@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            OTP Verification
+        </title>
+    </head>
+    <body bgcolor='blue'>
+        <form action='./verified' method='post'>
+            {% csrf_token %}
+            <label for='n1' class='lbl1'>Enter Mobile Number</label>
+            <p><input type='number' name='n1'></p>
+            <p><input type='submit' value = 'send' name='btn_send'></p>
+        </form>
+        <form action='./verification_done' method='post'>   
+            {% csrf_token %} 
+            <label for='n2' class='lbl1'>Enter OTP</label>        
+            <p><input type='number' name='n2'></p>        
+            <p><input type='submit' value = 'submit' name='btn_submit'></p>
+        </form>
+    </body>
+</html>
