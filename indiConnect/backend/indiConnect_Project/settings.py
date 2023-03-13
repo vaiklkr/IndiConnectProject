@@ -27,8 +27,7 @@ SECRET_KEY = 'django-insecure-6*v+$_udf3nnyj7)1sz+4i*2lu!jnm1rk6ykaq@i=*1s5lgmnv
 DEBUG = True
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['127.0.0.1']
-#ALLOWED_HOSTS = ['43.205.124.65']  ip address of the instance
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,22 +77,15 @@ WSGI_APPLICATION = 'indiConnect_Project.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    #'default': {
-    #    'ENGINE': 'django.db.backends.mysql',
-    #    'NAME': 'indiconnect',
-    #    'USER': 'root',
-    #    'PASSWORD': 'root1234',
-    #    'HOST': 'indiconnect.ckm94fessrpy.ap-south-1.rds.amazonaws.com',
-    #    'PORT': '3306',
-    #}
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'indiconnect',
         'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        #'PORT': '3306',
+        'PASSWORD': 'root1234',
+        'HOST': 'indiconnect.cbzuqpkblicu.ap-south-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
+    
 }
 
 
